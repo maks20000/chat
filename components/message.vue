@@ -1,12 +1,12 @@
 <template>
   <div>
-    <p class="message"><span class="name">{{name}}:</span><slot></slot></p>
+    <p :class="{user : isUser}" class="message"><span class="name">{{name}}:</span><slot></slot></p>
   </div>
 </template>
 
 <script>
 export default {
-  props: ['name','date','message'],
+  props: ['name','isUser'],
 }
 </script>
 
@@ -19,5 +19,8 @@ export default {
     font-size: 16px;
     font-weight: bold;
     margin-right: 5px;
+  }
+  p.message.user {
+    color: red;
   }
 </style>

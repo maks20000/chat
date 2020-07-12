@@ -35,6 +35,6 @@ module.exports = {
       }
     }
   },
-  modules: ['bootstrap-vue/nuxt']
+  modules: ['bootstrap-vue/nuxt','nuxt-moment']
 }
 
