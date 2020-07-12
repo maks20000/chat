@@ -29,6 +29,7 @@ const store = () => new Vuex.Store({
       state.user=user.name;
       state.id=user.id;
       state.auth=true;
+      state.inRoom=user.room;
     },
     update_list (state, data) {
       state.user_list=data;

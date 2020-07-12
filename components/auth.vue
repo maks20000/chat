@@ -20,7 +20,7 @@ export default {
     ]),
     auth() {
       if (this.name!="") {
-        this.auth_user({name:this.name})
+        this.auth_user({name:this.name,room:1})
       }
     }
   }

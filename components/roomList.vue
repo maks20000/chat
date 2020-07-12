@@ -11,6 +11,9 @@ export default {
 
   methods: {
     async set_room (id) {
+      var user = JSON.parse(localStorage.getItem("user"));
+      user.room=id;
+      localStorage.setItem("user",JSON.stringify(user))
       await this.$store.dispatch("set_chat_room",id);
       this.update_scroll(600)
     },
